@@ -8,7 +8,6 @@ namespace Asynkrone.UnityTelegramGame.Networking
     public class ConnexionManager : MonoBehaviour
     {
         [Tooltip("The end point where the score will be read & handled on your app")] [SerializeField] private string serverURI = "https://example.com/highscore/";
-        [Tooltip("Big prime numbers to provide a basic security when sending score to the app")] [SerializeField] private long[] SCORE_TOKEN = { };
         private IObfuscation obfuscation;
 
         private string playerId = "";
@@ -16,7 +15,7 @@ namespace Asynkrone.UnityTelegramGame.Networking
 
         void Start()
         {
-            obfuscation = new BasicObfuscation(SCORE_TOKEN);
+           /* obfuscation = new BasicObfuscation(SCORE_TOKEN);*/
 
 #if UNITY_EDITOR
             dontSend = true;

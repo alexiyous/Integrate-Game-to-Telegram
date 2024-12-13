@@ -153,7 +153,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serverURI: https://example.com/highscore/
-  SCORE_TOKEN: 0300000000000000
 --- !u!4 &76199458
 Transform:
   m_ObjectHideFlags: 0
@@ -646,7 +645,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1859725876}
-  telegramConnexionManager: {fileID: 76199457}
   score: 0
 --- !u!4 &1564750636
 Transform:
