@@ -8,9 +8,8 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class ApiConfig
-{
-    public string SECRET_KEY = "your_secret_key_here";
+public class ApiConfig : MonoBehaviour {
+    private string SECRET_KEY = "your_secret_key_here";
     [SerializeField]
     private string apiEndpoint = "your_api_endpoint_here";
     [SerializeField]

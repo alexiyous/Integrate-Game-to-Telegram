@@ -1,4 +1,5 @@
 
+using Asynkrone.UnityTelegramGame.Networking;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,7 @@ public class ScoreManager : MonoBehaviour {
     private void Start() {
 #if UNITY_EDITOR
         apiConfig.Init();
-        Debug.Log($"{apiConfig.SECRET_KEY}");
+        Debug.Log("PlayerId is empty");
 #elif UNITY_WEBGL            
         // The telegram game is launched with the player id as parameter 
         playerId = URLParameters.GetSearchParameters()["id"];
@@ -21,18 +22,15 @@ public class ScoreManager : MonoBehaviour {
 #endif
     }
 
-    private void Update()
-    {
+    private void Update() {
 
     }
 
-    public void OnClickAddToScore()
-    {
+    public void OnClickAddToScore() {
         score++;
         scoreText.text = score.ToString();
     }
-    public void OnClickShareScore()
-    {
+    public void OnClickShareScore() {
         if (string.IsNullOrEmpty(playerId)) {
             Debug.LogError("PlayerId is empty");
             return;

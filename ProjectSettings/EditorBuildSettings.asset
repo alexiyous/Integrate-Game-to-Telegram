@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/unity-telegram-game-main/Samples~ 1/SampleGame/Scenes/SampleScene.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 1dba6809c1c2afa47a1208543d8a00d0
   m_configObjects: {}
